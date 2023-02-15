@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  title = 'DemoAngularApp';
 
-  onValueChange(){
-    
-  }
+  title = 'List of Novels';
+
+ 
 }

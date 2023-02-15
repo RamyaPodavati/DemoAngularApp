@@ -6,13 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./firstcomponent.component.css']
 })
 export class FirstcomponentComponent{
-      Title: string = '';
-ngModel: any;
-      constructor(){}
 
-      onValueChange(){
-
-
+      ngModel: any;
+      data = "";
+      rating: any;
+      value: any;
+      temp: any;
+      result: string[] = [];
+      
+      Add(){
+        this.value++;
+      }
+      Delete(){
+        this.value--;
       }
 
+      onAddTitle(){
+        this.result.push(this.data);
+        this.temp = this.result;
+      }
 }

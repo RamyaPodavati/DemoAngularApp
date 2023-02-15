@@ -1,7 +1,23 @@
 
-<h2>Add a new title</h2>
 <div>
-  <input type="text" placeholder="Write a title">
-  <button (click) = "[(ngModel)] " >Add Title</button>
+  <p><b>Title</b></p>
+  <input type = "text" placeholder = "Ex: Harry Potter" [(ngModel)] = "data" >
+  <!--Wanted to print the list of titles entered by the user but couldn't implement the logic-->
+  <button (click) = "onAddTitle()" color = "warm" mat-raised-button>Add Title</button>
+<div>
+  <p><b>Rating</b></p>
+  <input type = "number" placeholder = "On the scale of 10" [(ngModel)] = "rating" >
 </div>
+</div>
+<p><b>Number of Copies Purchased</b></p>
+   <input type = "number" placeholder = "Ex: 20" [(ngModel)] = "value" >
+  <!--Even though the functionality to add and to decrease is in place with the input type number, 
+  added two separate buttons to have the button functionality-->
+   <button (click)="Add()" >Add</button>
+   <button (click)="Delete()" >Delete</button>
+<div>
+<p><b>List of Added Titles</b></p>
+<p>{{temp}}</p>
+ 
+
 
